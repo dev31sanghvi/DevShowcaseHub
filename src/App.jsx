@@ -2,6 +2,7 @@
 import React from 'react';
 import UserProfileCard from './components/UserProfileCard';
 import Header from './components/Headesr';
+import FormComponent from './components/Form';
 function App() {
   const users = [
     {
@@ -47,6 +48,7 @@ function App() {
   return (
     <>
     <div className='app'>
+      <FormComponent />
     <Header />
       <div className="grid grid-cols-3 gap-4">
         {users.map((user, index) => (
