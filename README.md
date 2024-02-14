@@ -5,5 +5,5 @@ Welcome to the DevShowcaseHub! This platform is designed to empower developers t
 
 ## Under Development
 
-The Developer Showcase Platform is currently under active development. We are working hard to enhance the platform and provide the best experience for our users. Stay tuned for updates as we progress towards our launch.
+The Platform is currently under active development. We are working hard to enhance the platform and provide the best experience for our users. Stay tuned for updates as we progress towards our launch.
 
