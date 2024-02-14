@@ -1,8 +1,9 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
 
-Currently, two official plugins are available:
+Welcome to the DevShowcaseHub! This platform is designed to empower developers to showcase their skills, connect with potential collaborators, and foster meaningful collaborations. Our platform provides a space for developers to highlight their expertise, share projects, and network with like-minded individuals.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Under Development
+
+The Developer Showcase Platform is currently under active development. We are working hard to enhance the platform and provide the best experience for our users. Stay tuned for updates as we progress towards our launch.
+
