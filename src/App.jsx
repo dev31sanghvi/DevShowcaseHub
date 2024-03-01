@@ -1,12 +1,13 @@
 // App.jsx
 import React from 'react';
+
 import UserProfileCard from './components/UserProfileCard';
 import Header from './components/Headesr';
-import FormComponent from './components/Form';
+
 function App() {
   const users = [
     {
-      name: "John Doe",
+      name: "Dev",
       profilePhoto: "path/to/john-doe.jpg",
       github: "https://github.com/dev31sanghvi",
       twitter: "https://twitter.com/johndoe",
@@ -25,7 +26,7 @@ function App() {
     },
 
     {
-      name: "Jane Smith",
+      name: "yashi",
       profilePhoto: "path/to/jane-smith.jpg",
       github: "https://github.com/janesmith",
       twitter: "https://twitter.com/janesmith",
@@ -39,7 +40,7 @@ function App() {
           githubLink: "https://github.com/janesmith/project1",
           liveLink: "https://project1.live",
         },
-        // Additional projects...
+        // Additional
       ],
     },
     // User 3, 4, 5, 6...
@@ -48,7 +49,7 @@ function App() {
   return (
     <>
     <div className='app'>
-      <FormComponent />
+{/* < FormComponent /> */}
     <Header />
       <div className="grid grid-cols-3 gap-4">
         {users.map((user, index) => (

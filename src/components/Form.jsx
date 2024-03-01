@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-
+import UserProfileCard from './UserProfileCard';
 const FormComponent = () => {
   const techOptions = ['HTML', 'CSS', 'JavaScript', 'React', 'Node.js', 'Express', 'MongoDB'];
   const [formData, setFormData] = useState({
@@ -53,8 +53,9 @@ const FormComponent = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // here the form submit logic will be written
+    // Logic for form submission...
     console.log('Form submitted:', formData);
+    history.push('/'); // Redirecting to the root route (App.jsx)
   };
 
   return (
@@ -204,6 +205,7 @@ const FormComponent = () => {
           </div>
         </form>
       </div>
+      <UserProfileCard user={formData} />
     </>
   );
 
