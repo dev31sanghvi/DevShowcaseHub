@@ -3,6 +3,8 @@ import React from 'react';
 import UserProfileCard from './components/UserProfileCard';
 import Header from './components/Headesr';
 import FormComponent from './components/Form';
+import SignInForm from './components/SigninForm';
+import LoginForm from './components/login';
 function App() {
   const users = [
     {
@@ -49,6 +51,8 @@ function App() {
     <>
     <div className='app'>
       <FormComponent />
+      <SignInForm />
+      <LoginForm />
     <Header />
       <div className="grid grid-cols-3 gap-4">
         {users.map((user, index) => (

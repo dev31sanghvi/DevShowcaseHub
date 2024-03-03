@@ -1,0 +1,44 @@
+CREATE SCHEMA IF NOT EXISTS user_details;
+
+
+CREATE TABLE user_details.users (
+  id SERIAL PRIMARY KEY,
+  name VARCHAR(50) UNIQUE NOT NULL,
+  mail_id VARCHAR(200) UNIQUE NOT NULL,
+  github_profile_link VARCHAR(255) NOT NULL,
+  linkedin_profile_link VARCHAR(255) NOT NULL,
+  twitter_profile_link VARCHAR(255)
+);
+
+CREATE TABLE user_details.technologies (
+  id SERIAL PRIMARY KEY,
+  name VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE user_details.projects (
+  id SERIAL PRIMARY KEY,
+  user_id INTEGER NOT NULL,
+  name VARCHAR(255) NOT NULL,
+  github_link VARCHAR(255) NOT NULL,
+  live_demo_link VARCHAR(255),
+  technology Text[],
+  FOREIGN KEY (user_id) REFERENCES user_details.users(id)
+);
+
+CREATE TABLE user_details.user_credential (
+  id SERIAL PRIMARY KEY,
+  user_id INTEGER NOT NULL,
+  user_mail VARCHAR(255) NOT NULL,
+  passworld VARCHAR(8) NOT NULL,
+  created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
+  FOREIGN KEY (user_id) REFERENCES user_details.users(id),
+  FOREIGN KEY (user_mail) REFERENCES user_details.users(mail_id)
+);
+-- Drop table user_details.project_technologies
+
+-- CREATE TABLE user_details.project_technologies (
+--   project_id INTEGER NOT NULL,
+--   technology_id INTEGER NOT NULL,
+--   PRIMARY KEY (project_id),
+--   FOREIGN KEY (project_id) REFERENCES user_details.projects(id)
+-- );
